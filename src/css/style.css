@@ -19,11 +19,18 @@
     transition: background-color 200ms linear;
 }
 
+.navbar.scrolled a{
+    color: #000 !important;
+    transition: color 200ms linear;
+}
+
 
 .navbar:hover{
-    background-color: #ffffffc0 !important;
-    transition: background-color 200ms linear;;
+    background-color: #ffffffc0 !important;  
+    transition: background-color 200ms linear;
 }
+
+
 
 
 .card{

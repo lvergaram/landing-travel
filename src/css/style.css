@@ -1,0 +1,31 @@
+:root{
+
+    --bs-body-font-family: monospace;
+    --bs-body-bg: var(--bs-grey-100);
+}
+
+#portada{
+    background-image: url("../img/cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* NAVBAR */
+
+.navbar.scrolled {
+    background-color: #ffffff42 !important;
+    transition: background-color 200ms linear;
+}
+
+
+.navbar:hover{
+    background-color: #ffffffc0 !important;
+    transition: background-color 200ms linear;;
+}
+
+
+.card{
+    width: 300px;
+}

@@ -31,19 +31,21 @@
 }
 
 
-/* Quienes somos */
+/* Cards */
+
+.card-img-top{
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+}
 
 i.bi{
     font-size: 2rem;
     color: #fff;
 }
 
+/* tooltip */
+.custom-tooltip {
+    --bs-tooltip-color: var(--bs-white);
+  }
 
-
-
-
-
-/* 
-.card{
-    width: 200px;
-} */

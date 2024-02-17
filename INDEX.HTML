@@ -123,6 +123,11 @@
                 <p class="card-text">Sumérgete en la majestuosidad de la Patagonia chilena, donde el Valle de las Mil Cascadas te espera con sus impresionantes paisajes de montañas cubiertas de nieve y lagos cristalinos</p>
               </div>
               <div class="card-footer">
+                <span class="badge rounded-pill text-bg-success"
+                data-bs-toggle="tooltip"
+                data-bs-custom-class="custom-tooltip"
+                title="Consulta con tu asesor "
+                >Oferta</span>
                 <small class="text-body-secondary">Last updated 3 mins ago</small>
               </div>
           </article>
@@ -143,7 +148,9 @@
             <div class="card h-100">
               <img src="src/img/card3.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Desierto Florido en Atacama</h5>
+                <h5 class="card-title">Desierto Florido
+                  <span class="badge bg-danger">Nuevo</span>
+                </h5>
                 <p class="card-text">Vive la experiencia única del Desierto Florido en pleno corazón del desierto de Atacama, cuando las lluvias ocasionales transforman el paisaje árido en un mar de colores vibrantes.</p>
               </div>
               <div class="card-footer">
@@ -171,7 +178,7 @@
 
     <!-- FORM Contacto -->
 
-    <section class="container px-5" id="contacto">
+    <section class="container px-5 mb-4" id="contacto">
 
         <h2 class="text-center"> Contacto </h2>
 
@@ -181,17 +188,17 @@
         
           <div class="input-group flex-nowrap mb-4">
             <span class="input-group-text" id="addon-wrapping">Nombre</span>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+            <input type="text" class="form-control" placeholder="Juan..." aria-label="Username" aria-describedby="addon-wrapping">
           </div>
         
           <div class="input-group flex-nowrap mb-4">
             <span class="input-group-text" id="addon-wrapping">Asunto</span>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+            <input type="text" class="form-control" placeholder="Ayuda duda..." aria-label="Username" aria-describedby="addon-wrapping">
           </div>
         
           <div class="input-group">
             <span class="input-group-text">Mensaje</span>
-            <textarea class="form-control" aria-label="With textarea"></textarea>
+            <textarea class="form-control" placeholder="Necesito una asesor para mis próximas vacaciones..." aria-label="With textarea"></textarea>
           </div>
           
           <div class="form-check my-3">
@@ -202,8 +209,12 @@
           </div>
     
           <div class="col-12">
-            <button type="submit" class="btn btn-primary d-block mx-auto">Sign in</button>
+            <button id="enviar-correo" type="submit" class="btn btn-primary d-block mx-auto">Enviar Mensaje</button>
           </div>
+
+          
+
+
         </form>
 
     </section>
@@ -211,48 +222,52 @@
     <!-- Footer -->
 
 
-    <footer class="container-fluid">
-      <div class="row">
+    <footer class="container-fluid bg-success py-5">
+      <div class="row g-5">
     
-        <section class="col-12 col-md-4">
-          <h5>Somos Travel Chile</h5>
+        <section class="col-12 col-md-3 text-white ">
+          <h5>Somos Viajes Chile</h5>
           <hr>
             <ul class="list-unstyled text-small">
-              <li><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+              <li><a class="link-light text-decoration-none" href="#">Historia</a></li>
+              <li><a class="link-light text-decoration-none" href="#">Equipo</a></li>
+              <li><a class="link-light text-decoration-none" href="#">Noticias</a></li>
+              <li><a class="link-light text-decoration-none" href="#">Sitio Corporativo</a></li>
             </ul>
         </section>
 
-        <section class="col-12 col-md-4">
-          <h5>Somos Travel Chile</h5>
+        <section class="col-12 col-md-3 text-white">
+          <h5>Destinos</h5>
           <hr>
             <ul class="list-unstyled text-small">
-              <li><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
-              <li><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
-            </ul>
+              <li><a class="link-light text-decoration-none" href="#">Zona Norte</a></li>
+              <li><a class="link-light text-decoration-none" href="#">Zona Centro</a></li>
+              <li><a class="link-light text-decoration-none" href="#">Zona Sur</a></li>
+              <li><a class="link-light text-decoration-none" href="#">Internacional</a></li>
         </section>
 
-        <section class="col-12 col-md-4">
+        <section class="col-12 col-md-3 text-white">
+          <h5>Viajeros</h5>
+          <hr>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-light text-decoration-none" href="#">Tips</a></li>
+              <li><a class="link-light text-decoration-none" href="#">Seguro de Viaje</a></li>
+              <li><a class="link-light text-decoration-none" href="#">Club del viajero</a></li>
+        </section>
+
+        <section class="col-12 col-md-3">
           <div class="d-flex flex-column">
             
-            <button type="button" class="btn btn-success rounded-pill p-3"> 
+            <button type="button" class="btn btn-outline-light rounded-pill p-3"> 
               Para ventas: 600 0303 456
               
               <!-- <em>Para Ventas:</em><span class="fw-light">600 0303 456</span> -->
             </button>
-            <div class="f-flex">
-              <i class="bi bi-youtube"></i>
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-instagram"></i>
-              <i class="bi bi-tiktok"></i>
+            <div class="p-4 d-flex justify-content-evenly">
+              <a href=""><i class="bi bi-youtube"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-tiktok"></i></a>
             </div>
           </div>
         </section>
